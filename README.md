@@ -1,6 +1,13 @@
-# PiPi Gherkin keyboard case
+##Things for PiPiGherkin keyboard
 
-[PiPi Gherkin](https://talpkeyboard.net/items/60ab41e10e24033744e21b93)用のケース
+[PiPi Gherkin](https://talpkeyboard.net/items/60ab41e10e24033744e21b93)のためのもの
 
-<img src="PIPI Gherkin case v1.png" alt="PIPI Gherkin case v1" style="zoom:67%;" />
+## ケース
+
+###  パーツリスト
+
+- Case/pipigherkin-case.stl
+- M2x4　なべタッピングビス　10本
+
+- ゴム足　4個
 
