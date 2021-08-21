@@ -4,6 +4,8 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 
 ## PiPi Gherkin用ケース
 
+![img](pipi_gherkin_case_v3.png)
+
 ### ストーリー
 
 [ラズパイPicoベースの30%自作キーボード "PiPi Gherkin" のビルドログ—ついでに3Dプリントケースも作った—](https://www.creativity-ape.com/entry/2021/07/24/180000#%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%82%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86)
