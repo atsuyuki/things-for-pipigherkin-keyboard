@@ -4,7 +4,7 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 
 ## PiPi Gherkin用ケース
 
-![img](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/PIPI_Gherkin_case_v4.png?raw=true)
+![img](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/PIPI_Gherkin_case_v5.png?raw=true)
 
 ### ストーリー
 
