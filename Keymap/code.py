@@ -26,7 +26,30 @@ rgb_ext = RGB(
 gherkin.extensions.append(rgb_ext)
 
 from kmk.handlers.sequences import send_string
-TEST = send_string(r"123456yuiop[]")
+TEST = send_string(r'123456yuiop[]')
+
+##### OLED使ってみる ###
+
+import busio
+import adafruit_ssd1306
+import time
+
+i2c = busio.I2C(board.GP27, board.GP26, frequency=1_000_000)
+
+display = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c, addr=0x3c)
+
+wakeup_neo = ''
+for c in 'The Matrix has you...':
+    wakeup_neo += c
+    display.fill(0)
+    display.text(wakeup_neo, 2, 15,1)
+    display.show()
+    time.sleep(0.1)
+
+#display.invert(True)
+display.show()
+
+#####
 
 gherkin.col_pins = (board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7)
 gherkin.row_pins = (board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
