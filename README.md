@@ -1,23 +1,44 @@
-# Things for PiPiGherkin keyboard
+# Things for PiPi Gherkin keyboard
 
 Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://talpkeyboard.net/items/60ab41e10e24033744e21b93) のためのものです。
 
-## PiPi Gherkin用ケース
+## PiPi GherkinとPiPiGherkin+4用ケース
 
-![img](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/PIPI_Gherkin_case_v5.png?raw=true)
+普通のPiPi Gherkinと、PiPi Gherkinに4キー追加した"PiPiGherkin+4"用のケースです。
+
+### 普通のPiPi Gherkin
+
+<img src="https://raw.githubusercontent.com/atsuyuki/things-for-pipigherkin-keyboard/main/PIPI_Gherkin_case_v5.png">
+
+### PiPiGherkin+4
+
+<img src="https://raw.githubusercontent.com/atsuyuki/things-for-pipigherkin-keyboard/main/IMG_8415.jpg">
+
+
 
 ### ストーリー
 
 [ラズパイPicoベースの30%自作キーボード "PiPi Gherkin" のビルドログ—ついでに3Dプリントケースも作った—](https://www.creativity-ape.com/entry/2021/07/24/180000#%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%82%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86)
 
-### 注意点
+### ⚠️ 注意
 
-省スペースを優先したため、キーソケット非対応です（干渉するがギリギリつけることはできるかも...）
+省スペースを優先したため、キーソケットには非対応です。
+
+### 3Dプリント用STLデータ
+
+- PiPi Gherkin用
+  - [Case/pipigherkin-case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin-case.stl)
+- PiPiGherkin+4用
+  - [Case/pipigherkin34-case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin34-case.stl)
 
 ### パーツリスト
 
-- PiPi Gherkin
-- [Case/pipigherkin-case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin-case.stl)
+- PiPi Gherkin　1枚
+- 3Dプリントしたケース　1枚
 - M2x4　なべタッピングビス　10本
-- ゴム足　適宜
+- ゴム足　4個
 
+### PiPiGherkin+4用追加パーツ
+
+- MXタイプキースイッチ　4個
+- 配線材　適量
