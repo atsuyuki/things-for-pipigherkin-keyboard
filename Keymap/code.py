@@ -26,7 +26,7 @@ rgb_ext = RGB(
 gherkin.extensions.append(rgb_ext)
 
 from kmk.handlers.sequences import send_string
-LOGIN = send_string(r"123456yuiop[]")
+TEST = send_string(r"123456yuiop[]")
 
 gherkin.col_pins = (board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7)
 gherkin.row_pins = (board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
@@ -57,7 +57,7 @@ gherkin.keymap = [
     [
         KC.ESC, KC.UP, XXXXXXX, XXXXXXX, JP.LPRN, JP.RPRN, JP.DOT, KC.P7, KC.P8, KC.P9,
         KC.LEFT, KC.DOWN, KC.RGHT, KC.LANG2, JP.LBRC, JP.RBRC, KC.LANG1, KC.P4, KC.P5, KC.P6,
-        CSE, GUISFTS, LOGIN, XXXXXXX, JP.LCBR, JP.RCBR, KC.P0, KC.P1, KC.P2, KC.P3,
+        CSE, GUISFTS, TEST, XXXXXXX, JP.LCBR, JP.RCBR, KC.P0, KC.P1, KC.P2, KC.P3,
 				XXXXXXX, _______, XXXXXXX, JP.EQL,
     ],
     [
