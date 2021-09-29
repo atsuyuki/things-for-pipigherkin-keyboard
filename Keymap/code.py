@@ -4,6 +4,9 @@ from kmk.keys import KC
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.matrix import DiodeOrientation
 from kmk.hid import HIDModes
+
+from keymap_jp import JP
+
 gherkin = KMKKeyboard()
 
 from kmk.modules.modtap import ModTap
@@ -12,10 +15,7 @@ gherkin.modules.append(ModTap())
 from kmk.modules.layers import Layers
 gherkin.modules.append(Layers())
 
-from kmk.extensions.international import International
-gherkin.extensions.append(International())
-
-from kmk.extensions.RGB import RGB
+from kmk.extensions.rgb import RGB
 from kmk.extensions.rgb import AnimationModes
 rgb_ext = RGB(
 		pixel_pin = board.GP28,
@@ -25,6 +25,9 @@ rgb_ext = RGB(
         )
 gherkin.extensions.append(rgb_ext)
 
+from kmk.handlers.sequences import send_string
+LOGIN = send_string(r"123456yuiop[]")
+
 gherkin.col_pins = (board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7)
 gherkin.row_pins = (board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
 
@@ -32,21 +35,42 @@ gherkin.diode_orientation = DiodeOrientation.COLUMNS
 
 gherkin.debug_enabled = True
 
+gherkin.tap_time = 120
+
 _______ = KC.TRNS
 XXXXXXX = KC.NO
+CSE = KC.LCTL(KC.LSFT(KC.ESC))
+GUISFTS = KC.LGUI(KC.LSFT(KC.S))
+
+RAISE = 1
+SYMBOL = 2
+LOWER = 3
+
 
 gherkin.keymap = [
-		[   
-        KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,    KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,
-        KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.H,    KC.J,    KC.K,    KC.L,    KC.MINS,
-        KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.N,    KC.M,    KC.COMM,    KC.DOT,    KC.QUES,
-        KC.MT(KC.TAB, KC.LCTRL),   KC.LT(1,KC.SPC),    KC.BSPC,    KC.ENT
+    [
+        JP.Q, JP.W, JP.E, JP.R, JP.T, JP.Y, JP.U, JP.I, JP.O, JP.P,
+        JP.A, JP.S, JP.D, JP.F, JP.G, JP.H, JP.J, JP.K, JP.L, JP.MINS,
+        KC.LT(SYMBOL, JP.Z), KC.LT(LOWER, JP.X), JP.C, JP.V, JP.B, JP.N, JP.M, KC.MT(JP.COMM,KC.RALT), KC.MT(JP.DOT,KC.RSFT), KC.MT(JP.QUES,KC.RGUI),
+				KC.MT(KC.TAB,KC.LCTL), KC.LT(RAISE, KC.SPC), KC.BSPC, KC.ENT,
     ],
     [
-        _______, KC.UP,   _______, _______,  _______, _______, _______,  KC.P7, KC.P8, KC.P9,
-        KC.LEFT, KC.DOWN, KC.RGHT, KC.LANG2, _______, _______, KC.LANG1, KC.P4, KC.P5, KC.P6,
-        _______, _______, _______, _______,  _______, _______, KC.P0,    KC.P1, KC.P2, KC.P3,
-        _______, KC.TRNS, KC.DEL,  _______
+        KC.ESC, KC.UP, XXXXXXX, XXXXXXX, JP.LPRN, JP.RPRN, JP.DOT, KC.P7, KC.P8, KC.P9,
+        KC.LEFT, KC.DOWN, KC.RGHT, KC.LANG2, JP.LBRC, JP.RBRC, KC.LANG1, KC.P4, KC.P5, KC.P6,
+        CSE, GUISFTS, LOGIN, XXXXXXX, JP.LCBR, JP.RCBR, KC.P0, KC.P1, KC.P2, KC.P3,
+				XXXXXXX, _______, XXXXXXX, JP.EQL,
+    ],
+    [
+        JP.DLR, JP.YEN, JP.PIPE, JP.AMPR, JP.DQUO, JP.QUOT, JP.COLN, JP.SCLN, JP.CIRC, JP.TILD,
+        JP.AT, JP.HASH, JP.PERC, JP.GRV, XXXXXXX, XXXXXXX, JP.ASTR, JP.SLSH, JP.PLUS, JP.UNDS,
+        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, JP.LABK, JP.RABK, JP.EXLM,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    ],
+    [
+        KC.F1, KC.F2, KC.F3, KC.F4, KC.F5, KC.F6, KC.F7, KC.F8, KC.F9, KC.F10,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.F11,
+        KC.RGB_TOG, _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.F12,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
     ]
 ]
 
