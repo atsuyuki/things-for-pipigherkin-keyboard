@@ -10,6 +10,8 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 
 <img src="https://raw.githubusercontent.com/atsuyuki/things-for-pipigherkin-keyboard/main/IMG_8415.jpg">
 
+<img src="https://raw.githubusercontent.com/atsuyuki/things-for-pipigherkin-keyboard/main/IMG_8418.jpg">
+
 ## ストーリー
 
 [ラズパイPicoベースの30%自作キーボード "PiPi Gherkin" のビルドログ—ついでに3Dプリントケースも作った—](https://www.creativity-ape.com/entry/2021/07/24/180000#%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%82%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86)
