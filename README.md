@@ -29,7 +29,10 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 - PiPi Gherkin用
   - [Case/pipigherkin-case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin-case.stl)
 - PiPiGherkin+4用
-  - [Case/pipigherkin34-case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin34-case.stl)
+  - [Case/pipigherkin+4case.stl](https://github.com/atsuyuki/things-for-pipigherkin-keyboard/blob/main/Case/pipigherkin+4case.stl)
+
+この活動を支援したいと思っていただけたら、BoothでBoost付き（内容は全く同じです）をダウンロードしてくれると嬉しいです。頂戴したBoostは、おしゃれなキーキャップセットを手に入れ、上の写真をかっこよくすることに充てたいと思います🔥
+https://creativity-ape.booth.pm/items/3314996
 
 ### パーツリスト
 
