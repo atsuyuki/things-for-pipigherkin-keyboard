@@ -50,7 +50,7 @@ GUISFTS = KC.LGUI(KC.LSFT(KC.S))
 RAISE = 1
 SYMBOL = 2
 LOWER = 3
-?
+
 gherkin.keymap = [
     [
         KC.Q, KC.W, KC.E, KC.R, KC.T, KC.Y, KC.U, KC.I, KC.O, KC.P,
