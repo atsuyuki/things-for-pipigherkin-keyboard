@@ -14,9 +14,11 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 
 <img src="https://raw.githubusercontent.com/atsuyuki/things-for-pipigherkin-keyboard/main/IMG_8418.jpg">
 
-## ストーリー
+## ストーリー、ビルドガイド
 
-[ラズパイPicoベースの30%自作キーボード "PiPi Gherkin" のビルドログ—ついでに3Dプリントケースも作った—](https://www.creativity-ape.com/entry/2021/07/24/180000#%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%82%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86)
+- [ラズパイPicoベースの30%自作キーボード "PiPi Gherkin" のビルドログ—ついでに3Dプリントケースも作った—](https://www.creativity-ape.com/entry/2021/07/24/180000#%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%82%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86)
+- [30%キーボードPiPi Gherkinにキー4つとLEDを増設する話—これもまたひとつのエンドゲーム—](https://www.creativity-ape.com/entry/2021/10/21/205731)
+
 
 ## ⚠️ 注意
 
@@ -46,7 +48,3 @@ Raspberry Pi Picoベースの30%自作キーボード [PiPi Gherkin](https://tal
 
 - MXタイプキースイッチ　4個
 - 配線材　適量
-
-## ビルドガイド
-
-準備中、10月中には公開する予定です。
